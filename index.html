@@ -422,8 +422,9 @@
       }
 
       function resultJoke(percentWrong) {
-        if (percentWrong <= 10) return "Bra jobbet! Du har full kontroll på det fonetiske alfabetet.";
-        if (percentWrong <= 25) return "Sterk runde. Du har god kontroll på det fonetiske alfabetet.";
+        if (percentWrong <= 0) return "Full pott! Du kan det fonetiske alfabetet.";
+        if (percentWrong <= 10) return "Bra jobbet! Du har god kontroll på det fonetiske alfabetet.";
+        if (percentWrong <= 25) return "Sterk runde. Du har ganske god kontroll på det fonetiske alfabetet.";
         if (percentWrong <= 45) return "Et par runder til, så sitter alt.";
         if (percentWrong <= 65) return "Godkjent innsats. Ta et par runder til, så sitter alt.";
         return "Her må du ta noen runder til. Det fonetiske alfabetet er kjekt å kunne, så ikke gi opp!";
